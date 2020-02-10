@@ -1,0 +1,7 @@
+<% if session[:cart] == nil %>
+    <%= cart is empty %>
+<% else %>
+    <% session[:cart].each do |item|%>
+    <%= item %>
+    <% end%>
+<% end%>
